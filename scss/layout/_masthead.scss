@@ -1,0 +1,50 @@
+.masthead {
+  .languages {
+    // padding-right: 2em;
+    // margin: auto 0;
+    // position: absolute;
+    left: 0;
+    top: 110px;
+    text-align: left;
+    list-style: none;
+    padding-left: 1em;
+    font-size: 1.15em;
+    li {
+      a {
+        color: #000 !important;
+      }
+    }
+  }
+  padding-top: calc(3rem + 70px);
+  padding-bottom: 6rem;
+
+  .masthead-heading {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: rgb(20, 20, 20);
+  }
+  .masthead-subheading {
+    font-size: 1.25rem;
+    color: rgb(20, 20, 20);
+  }
+  .masthead-avatar {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .masthead {
+    padding-top: calc(6rem + 80px);
+    padding-bottom: 3rem;
+    .masthead-heading {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    .masthead-subheading {
+      font-size: 1.8rem;
+    }
+  }
+}
