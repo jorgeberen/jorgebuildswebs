@@ -23,6 +23,20 @@ var language = {
     email: "Correo Electrónico",
     telefono: "Teléfono",
     mensaje: "Mensaje",
+    modal1title: "OLAS",
+    modal1desc:
+      "Un ejemplo de una web para una escuela de surf. Simple, eficaz y funcional sitio de una sola página. Es responsiva y se ve bien en pantallas de todos los tamaños.",
+    modal1close: "Cerrar Ventana",
+    modal2title: "CAMBIO DE LOOK",
+    modal2desc:
+      "Un ejemplo de una web para una peluquería. Diseño estilizado, limpio y responsivo.",
+    modal2close: "Cerrar Ventana",
+    modal3title: "APRENDE ESPAÑOL",
+    modal3desc: "Una web para estudiantes de español.",
+    modal3close: "Cerrar Ventana",
+    modal4title: "Rock'n Roll",
+    modal4desc: "El  portal de la banda Alicantina Impronta Viral.",
+    modal4close: "Cerrar Ventana",
   },
 };
 
@@ -41,11 +55,6 @@ if (window.location.hash) {
     hairHover.textContent = language.es.hairHover;
     spanishHover.textContent = language.es.spanishHover;
     viralHover.textContent = language.es.viralHover;
-    document.getElementById("name").placeholder = language.es.nombre;
-    document.getElementById("email").placeholder = language.es.email;
-    document.getElementById("phone").placeholder = language.es.telefono;
-    document.getElementById("message").placeholder = language.es.mensaje;
-    sendMessageButton.textContent = "Enviar";
     menuBtn.textContent = "MENÚ";
     portLink.textContent = "TRABAJOS";
     aboutLink.textContent = "ACERCA DE MÍ";
@@ -53,6 +62,21 @@ if (window.location.hash) {
     portfolioMain.textContent = "TRABAJOS";
     aboutMain.textContent = "ACERCA DE MÍ";
     contactMain.textContent = "CONTACTO";
+    modal1title.textContent = language.es.modal1title;
+    modal1desc.textContent = language.es.modal1desc;
+    modal1close.textContent = language.es.modal1close;
+
+    modal2title.textContent = language.es.modal2title;
+    modal2desc.textContent = language.es.modal2desc;
+    modal2close.textContent = language.es.modal2close;
+
+    modal3title.textContent = language.es.modal3title;
+    modal3desc.textContent = language.es.modal3desc;
+    modal3close.textContent = language.es.modal3close;
+
+    modal4title.textContent = language.es.modal4title;
+    modal4desc.textContent = language.es.modal4desc;
+    modal4close.textContent = language.es.modal4close;
   }
 }
 
@@ -61,7 +85,7 @@ if (window.location.hash) {
 function reloadPage() {
   setTimeout(function () {
     location.reload();
-  }, 100);
+  }, 1000);
 }
 
 // function reloadPage() {
